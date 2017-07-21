@@ -5,9 +5,9 @@
   <version>1.0</version>
   <packaging>pom</packaging>
   <name>Fusion</name>
-  <description>Fusion API </description>
+  <description>Fusion</description>
   <modules>
-  	<module>fusion-api</module>
-  	<module>fusion-core</module>
+  	<module>FusionAPI</module>
+  	<module>FusionCore</module>
   </modules>
 </project>
