@@ -11,4 +11,8 @@ public interface RegistryGroup<OBJECT, ID>
 	public List<Registrar<OBJECT, ID>> getRegistrars();
 	
 	public void addRegistrar(Registrar<OBJECT, ID> registrar) throws FusionRegistrationException;
+	
+	public void beginRegistration() throws FusionRegistrationException;
+	
+	public void completeRegistration() throws FusionRegistrationException;
 }
