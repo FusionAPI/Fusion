@@ -45,4 +45,20 @@ public class RegistrationGroup<OBJECT, ID> implements RegistryGroup<OBJECT, ID>
 		
 		registrars.put(registrar.getSource(), registrar);
 	}
+	
+	public void beginRegistration() throws FusionRegistrationException
+	{
+		for(String i : getRegistrarSources())
+		{
+			getRegistrar(i).beginRegistration();
+		}
+	}
+	
+	public void completeRegistration() throws FusionRegistrationException
+	{
+		for(String i : getRegistrarSources())
+		{
+			getRegistrar(i).completeRegistration();
+		}
+	}
 }
