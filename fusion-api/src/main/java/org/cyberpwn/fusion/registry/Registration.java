@@ -2,6 +2,7 @@ package org.cyberpwn.fusion.registry;
 
 import java.util.HashMap;
 import java.util.Map;
+import org.cyberpwn.fusion.Fusion;
 
 public class Registration<OBJECT, ID> implements Registrar<OBJECT, ID>
 {
@@ -18,6 +19,7 @@ public class Registration<OBJECT, ID> implements Registrar<OBJECT, ID>
 		registering = false;
 		registers = null;
 		registerSet = new HashMap<OBJECT, ID>();
+		Fusion.l(this, "Creating Registrar: " + getSource());
 	}
 	
 	public void beginRegistration() throws FusionRegistrationException

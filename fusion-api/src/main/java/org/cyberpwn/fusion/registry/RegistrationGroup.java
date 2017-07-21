@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import org.cyberpwn.fusion.Fusion;
 
 public class RegistrationGroup<OBJECT, ID> implements RegistryGroup<OBJECT, ID>
 {
@@ -11,6 +12,7 @@ public class RegistrationGroup<OBJECT, ID> implements RegistryGroup<OBJECT, ID>
 	
 	public RegistrationGroup()
 	{
+		Fusion.l(this, "Creating " + getClass().getSimpleName() + " Registrar group");
 		registrars = new HashMap<String, Registrar<OBJECT, ID>>();
 	}
 	
@@ -38,6 +40,7 @@ public class RegistrationGroup<OBJECT, ID> implements RegistryGroup<OBJECT, ID>
 	
 	public void addRegistrar(Registrar<OBJECT, ID> registrar) throws FusionRegistrationException
 	{
+		Fusion.l(this, "Adding Registrar " + registrar.getSource() + " to group");
 		if(getRegistrarSources().contains(registrar.getSource()))
 		{
 			throw new FusionRegistrationException("Registrar " + registrar.getSource() + " already exists");
