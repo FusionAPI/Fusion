@@ -6,7 +6,7 @@
 	<version>1.0</version>
 	<packaging>pom</packaging>
 	<name>Fusion</name>
-	<description>Fusion</description>
+	<description>Organizes 1.13 Datapacks by creating a registry system that handles resources across multiple bukkit plugins.</description>
 	<properties>
 		<local.basedir>${project.basedir}</local.basedir>
 		<local.repository>file://${local.basedir}\repository</local.repository>
