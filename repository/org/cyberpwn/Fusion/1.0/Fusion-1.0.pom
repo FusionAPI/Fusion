@@ -9,7 +9,9 @@
 	<description>Organizes 1.13 Datapacks by creating a registry system that handles resources across multiple bukkit plugins.</description>
 	<properties>
 		<local.basedir>${project.basedir}</local.basedir>
-		<local.repository>file://${local.basedir}\repository</local.repository>
+		<local.repository>${local.basedir}\repository</local.repository>
+		<local.scripts>${local.basedir}\scripts</local.scripts>
+		<local.release>${local.basedir}\release</local.release>
 	</properties>
 	<modules>
 		<module>FusionAPI</module>
@@ -18,7 +20,7 @@
 	<distributionManagement>
 		<repository>
 			<id>fusionapi</id>
-			<url>${local.repository}</url>
+			<url>file://${local.repository}</url>
 		</repository>
 	</distributionManagement>
 </project>
