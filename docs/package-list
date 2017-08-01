@@ -1,4 +1,3 @@
 org.cyberpwn.fusionapi
-org.cyberpwn.fusionapi.registry
-org.cyberpwn.fusionapi.resource
-org.cyberpwn.fusionapi.type
+org.cyberpwn.fusionapi.json
+org.cyberpwn.fusionapi.pack

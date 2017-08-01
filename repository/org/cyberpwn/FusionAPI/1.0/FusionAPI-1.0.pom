@@ -59,8 +59,20 @@
 	</distributionManagement>
 	<repositories>
 		<repository>
+			<id>spigot-repo</id>
+			<url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+		</repository>
+		<repository>
 			<id>fusion-repo</id>
 			<url>https://raw.githubusercontent.com/FusionAPI/Fusion/master/repository/</url>
 		</repository>
 	</repositories>
+	<dependencies>
+		<dependency>
+			<groupId>org.bukkit</groupId>
+			<artifactId>bukkit</artifactId>
+			<version>1.12-R0.1-SNAPSHOT</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
 </project>
